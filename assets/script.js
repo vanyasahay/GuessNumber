@@ -12,7 +12,7 @@ functionNumberGuessed(){
             alert("Guess a number and it should be between 1 and 100 !");
         }
         else{
-            numberGussed.push();
+            numberGussed.push(userCount);
             guessNumber+=1;
         }
 
