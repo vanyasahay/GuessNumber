@@ -47,3 +47,12 @@ button{
 .txt{
     font-weight: 400;
 }
+
+body{
+    height: 90vh;
+    background: linear-gradient(
+        to right,
+        #ac8a53,
+        #ed65e4
+    );
+}
