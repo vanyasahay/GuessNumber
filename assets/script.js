@@ -14,22 +14,22 @@ function functionNumberGuessed(){
         else{
             numberGussed.push(userCount);
             guessNumber+= 1;
-        }
+        
 
-        if(userCount < output){
+            if(userCount < output){
             firstMessage.textContent = "Think higher number";
             secondMessage.textContent ="Guess Numbe is:-" + guessNumber;
             thirdMessage.textContent ="Your number is:-" + numberGussed;
-
-        }
-        else if(userCount < output){
+             }
+            else if(userCount < output){
             firstMessage.textContent = "Think lower number";
             secondMessage.textContent ="Guess Number is:-" + guessNumber;
             thirdMessage.textContent ="Your number is:-" + numberGussed; 
-        }
-        else if(userCount < output){
+            }
+             else if(userCount < output){
             firstMessage.textContent = "You hit the Jackpot!!";
             secondMessage.textContent ="This was the number:- " + guessNumber;
             thirdMessage.textContent ="which you gussed in :- " + numberGussed;
+             }
         }
 }
