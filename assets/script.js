@@ -6,14 +6,14 @@ var firstMessage = document.getElementsById("txt1");
 var secondMessage = document.getElementsById("txt2");
 var thirdMessage = document.getElementsById("txt3");
 
-functionNumberGuessed(){
+function functionNumberGuessed(){
     var userCount = document.getElementsById("myNumber").value;
         if(userCount < 1 || userCount > 100){
             alert("Guess a number and it should be between 1 and 100 !");
         }
         else{
             numberGussed.push(userCount);
-            guessNumber+=1;
+            guessNumber+= 1;
         }
 
         if(userCount < output){
