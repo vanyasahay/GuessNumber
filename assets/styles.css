@@ -44,15 +44,20 @@ button{
     border-radius: 6px;
 }
 
-.txt{
+p{
     font-weight: 400;
+    font-size: medium;
+    font-style: normal;
+    color: #993333;
 }
 
 body{
     height: 90vh;
     background: linear-gradient(
-        to right,
+        to left,
         #ac8a53,
-        #ed65e4
+        #ed65e4,
+        #ec8181
+
     );
 }
