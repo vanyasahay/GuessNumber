@@ -35,4 +35,18 @@ function yourNumberGuessed(){
         }
     }
 }
+function resetButton(){
+    guessNumber = 1;
+    const resetParas = document.getElementById("resetbutton");
+    for (const resetPara of resetParas) {
+      resetPara.textContent = '';
+    }
+
+    resetButton.parentNode.removeChild(resetButton);
+    myNumber.disabled = false;
+    mybutton.disabled = false;
+    myNumber.value = '';
+    myNumber.focus();
+    randomNumber = Math.floor(Math.random() * 25) + 1;
+}
 mybutton.addEventListener('click',yourNumberGuessed)
