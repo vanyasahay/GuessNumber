@@ -1,6 +1,6 @@
-var firstMessage = document.getElementsById("txt1");
-var secondMessage = document.getElementsById("txt2");
-var thirdMessage = document.getElementsById("txt3");
+var firstMessage = document.getElementById("txt1");
+var secondMessage = document.getElementById("txt2");
+var thirdMessage = document.getElementById("txt3");
 
 var output = Math.floor(Math.random()*100) + 1;
 var guessNumber = 0;
