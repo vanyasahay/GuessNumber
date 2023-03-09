@@ -17,14 +17,14 @@ function yourGuessedNumber(){
 
         if(userCount < output){
             firstMessage.textContent = "Think Lower Number.";
-            secondMessage.textContent = "No. of guesses: " + numberGussed;
-            thirdMessage.textContent = "Guessed numbers are: " +
+            secondMessage.textContent = "Try again except these numbers: " + numberGussed;
+            thirdMessage.textContent = "Guessed attempts are: " +
             guessNumber;
         }
         else if(userCount > output){
             firstMessage.textContent = "Think higher number.";
-            secondMessage.textContent = "No. of guesses: " + numberGussed;
-            thirdMessage.textContent = "Guessed numbers are: " +
+            secondMessage.textContent = "Try again except these number: " + numberGussed;
+            thirdMessage.textContent = "Guessed attempts are: " +
             guessNumber;
         }
         else if(userCount == output){
