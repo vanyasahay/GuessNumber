@@ -1,23 +1,22 @@
-var output = Math.floor(Math.random()*100) + 1;
+var firstMessage = document.getElementsById("txt1");
+var secondMessage = document.getElementsById("txt2");
+var thirdMessage = document.getElementsById("txt3");
+
+var output = Math.floor(Math.random()*25) + 1;
 var guessNumber = 0;
 var numberGussed = [];
 
-var firstMessage = document.getElementsByClass("txt1");
-var secondMessage = document.getElementsByClass("txt2");
-var thirdMessage = document.getElementsByClass("txt3");
-
-document.getElementById("myNumber").onclick = function functionNumberGuessed(){
+function yourNumberGuessed(){
     var userCount = document.getElementsById("myNumber").value;
-        if(userCount < 1 || userCount > 100){
-            alert("Guess a number and it should be between 1 and 100 !");
+        if(userCount < 1 || userCount > 25){
+            alert("Guess a number and it should be between 1 and 25 !");
         }
         else{
             numberGussed.push(userCount);
-            guessNumber += 1;
+            guessNumber+= 1;
         
-
             if(userCount < output){
-            firstMessage.textContent = "Think higher number";
+            firstMessage.textContent = "Think a higher number";
             secondMessage.textContent ="Guess Numbe is:-" + guessNumber;
             thirdMessage.textContent ="Your number is:-" + numberGussed;
              }
@@ -28,8 +27,9 @@ document.getElementById("myNumber").onclick = function functionNumberGuessed(){
             }
              else if(userCount == output){
             firstMessage.textContent = "You hit the Jackpot!!";
-            secondMessage.textContent ="This was the number:- " + guessNumber;
-            thirdMessage.textContent ="which you gussed in :- " + numberGussed;
+            secondMessage.textContent ="This was the number:- " + output;
+            thirdMessage.textContent ="Which you gussed in :- " + guessNumber;
+            document.getElementById("mybutton").disabled = true;
              }
         }
 }
