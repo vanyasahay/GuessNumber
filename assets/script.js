@@ -35,8 +35,4 @@ function yourNumberGuessed(){
         }
     }
 }
-function resetButton(){
-    var resetform= document.getElementById("guess_form");
-    resetform.reset()
-}
 mybutton.addEventListener('click',yourNumberGuessed)
