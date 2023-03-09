@@ -20,6 +20,7 @@
 
 input[type="text"]{
     color: #419e66;
+    justify-items: center;
     font-size: 30px;
     font-weight: 580;
     padding: 20px 0;
