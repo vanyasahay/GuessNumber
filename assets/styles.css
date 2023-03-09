@@ -44,19 +44,6 @@ input[type="text"]{
     width: 180px;
     border-radius: 6px;
 }
-#resetButton{
-    font-size: 20px;
-    font-weight: 580;
-    padding: 20px 0;
-    background-color: #993333;
-    color: #ffffff;
-    border: none;
-    margin-bottom: 35px;
-    outline: none;
-    width: 180px;
-    border-radius: 6px;
-}
-
 
 p{
     font-weight: 400;
