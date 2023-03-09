@@ -16,19 +16,19 @@ function yourGuessedNumber(){
         guessNumber+= 1;
 
         if(userCount < output){
-            firstMessage.textContent = "Your guess is too low.";
+            firstMessage.textContent = "Think Lower Number.";
             secondMessage.textContent = "No. of guesses: " + numberGussed;
             thirdMessage.textContent = "Guessed numbers are: " +
             guessNumber;
         }
         else if(userCount > output){
-            firstMessage.textContent = "Your guess is too high.";
+            firstMessage.textContent = "Think higher number.";
             secondMessage.textContent = "No. of guesses: " + numberGussed;
             thirdMessage.textContent = "Guessed numbers are: " +
             guessNumber;
         }
         else if(userCount == output){
-            firstMessage.textContent = "Yippie You Win!!";
+            firstMessage.textContent = "Congratulations! You hit the Jackpot";
             secondMessage.textContent = "The number was: " + output;
             thirdMessage.textContent = "You guessed it in "+ numberGussed + " guesses";
             document.getElementById("mybutton").disabled = true;
