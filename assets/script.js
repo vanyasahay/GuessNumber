@@ -36,17 +36,7 @@ function yourNumberGuessed(){
     }
 }
 function resetButton(){
-    guessNumber = 1;
-    const resetParas = document.getElementById("resetbutton");
-    for (const resetPara of resetParas) {
-      resetPara.textContent = '';
-    }
-
-    resetButton.parentNode.removeChild(resetButton);
-    myNumber.disabled = false;
-    mybutton.disabled = false;
-    myNumber.value = '';
-    myNumber.focus();
-    randomNumber = Math.floor(Math.random() * 100) + 1;
+    var resetform= document.getElementById("guess_form");
+    resetform.reset()
 }
 mybutton.addEventListener('click',yourNumberGuessed)
