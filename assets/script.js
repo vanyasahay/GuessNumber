@@ -2,9 +2,9 @@ var output = Math.floor(Math.random()*100) + 1;
 var guessNumber = 0;
 var numberGussed = [];
 
-var firstMessage = document.getElementsById("txt1");
-var secondMessage = document.getElementsById("txt2");
-var thirdMessage = document.getElementsById("txt3");
+var firstMessage = document.getElementsByClass("txt1");
+var secondMessage = document.getElementsByClass("txt2");
+var thirdMessage = document.getElementsByClass("txt3");
 
 document.getElementById("myNumber").onclick = function functionNumberGuessed(){
     var userCount = document.getElementsById("myNumber").value;
