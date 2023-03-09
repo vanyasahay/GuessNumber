@@ -12,8 +12,13 @@
     <div class="container">
         <h3 class="heading">Guess any NUMBER between 1-100. </h3>
         <h3 class="heading">Enter in the text field</h3>
+
+        <form id="guess_form">
         <input type="text" id="myNumber"><br />
         <button onclick="yourGuessedNumber()" id="mybutton">My Guess</button><br />
+        <button onclick="resetbutton()" id="resetButton">RESET</button>
+        <form id="guess_form">
+
         <p id="txt1">Total number of guesses: 0</p>
         <p id="txt2">Your guesses counts: 0</p>
         <p id="txt3"></p>
