@@ -16,21 +16,21 @@ function yourNumberGuessed(){
         guessNumber+= 1;
 
         if(userCount < output){
-            msg1.textContent = "Your guess is too low.";
-            msg2.textContent = "No. of guesses: " + numberGussed;
-            msg3.textContent = "Guessed numbers are: " +
+            txt1.textContent = "Your guess is too low.";
+            txt2.textContent = "No. of guesses: " + numberGussed;
+            txt3.textContent = "Guessed numbers are: " +
             guessNumber;
         }
         else if(userCount > output){
-            msg1.textContent = "Your guess is too high.";
-            msg2.textContent = "No. of guesses: " + numberGussed;
-            msg3.textContent = "Guessed numbers are: " +
+            txt1.textContent = "Your guess is too high.";
+            txt2.textContent = "No. of guesses: " + numberGussed;
+            txt3.textContent = "Guessed numbers are: " +
             guessNumber;
         }
         else if(userCount == output){
-            msg1.textContent = "Yippie You Win!!";
-            msg2.textContent = "The number was: " + output;
-            msg3.textContent = "You guessed it in "+ numberGussed + " guesses";
+            txt1.textContent = "Yippie You Win!!";
+            txt2.textContent = "The number was: " + output;
+            txt3.textContent = "You guessed it in "+ numberGussed + " guesses";
             document.getElementById("mybutton").disabled = true;
         }
     }
