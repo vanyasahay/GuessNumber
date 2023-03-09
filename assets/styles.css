@@ -1,7 +1,7 @@
 .container{
     display: grid;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #3a19ca8e;
     justify-items: center;
     padding: 60px 15px;
     position: absolute;
@@ -48,7 +48,7 @@ p{
     font-weight: 400;
     font-size: medium;
     font-style: normal;
-    color: #993333;
+    color: #1307b5;
 }
 
 body{
